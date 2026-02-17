@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Course Registration Portal</title>
+</head>
+<body>
+    <header>
+        <h1>E-Learning Course Registration Portal</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Introduction Video </h2>
+            <video  controls width="500" height="300" poster="Images/download.jpeg">
+                <source src="Videos/WhatsApp Video 2026-02-17 at 8.54.10 PM.mp4" type="video/mp4">
+                <track label="English" srclang="en" kind="subtitles" default>
+                Your Browser does not support the video tag.
+            </video> 
+        </section>
+        <section>
+            <h2>Course Registration</h2>
+
+            <form action="">
+                <label for="co">Courses Available:</label>
+                <input type="text" id="co" list="courses" required placeholder="Search the course you want ">
+
+                <datalist id="courses">
+                    <option value="JavaFullStack"></option>
+                    <option value="MERNStack"></option>
+                    <option value="DotNetFullStack"></option>
+                    <option value="PythonFullStack"></option>
+                    <option value="Testing"></option>
+                    <option value="Devops"></option>
+                </datalist>
+                <br><br>
+
+                <label for="batch">Batch Selection:</label>
+                <input type="month" id="batch" list="batches" placeholder="Select the Batch you wonna Join" required><br><br>
+
+                <label for="sess">Session Timings:</label>
+                <input type="time" id="sess" list="sessions" placeholder="Give Your Preference Timings" required><br><br>
+
+                <label for="rating">Skill Rating:</label>
+                <input type="range" id="rating" min="1" max="10" value="5"><br><br>
+                 <!-- <meter value="0.6">60%</meter> -->
+
+                <label>Enrollment Progress</label>
+                <progress value="70" max="100"></progress><br><br>
+
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

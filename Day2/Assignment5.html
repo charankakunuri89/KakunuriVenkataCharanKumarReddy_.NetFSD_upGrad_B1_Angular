@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Banking Account Opening</title>
+</head>
+<body>
+    <header>
+        <h2>Digital Banking Account Opening</h2>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <label for="fn">Full name:</label>
+                <input type="text" id="fn" required><br><br>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" required><br><br>
+                <label for="phno">PhoneNumber:</label>
+                <input type="tel" id="phno" pattern="[0-9]{10}" title="Phone number must have 10 digits" required><br><br>
+                <label for="pan">PAN number:</label>
+                <input type="text" id="pan" pattern="[A-Z]{5}[0-9]{4}[A-Z]" required><br><br>
+                <label for="ifsc">IFSC code:</label>
+                <input type="text" id="ifsc" pattern="[A-Za-Z]{4}0[0-9]{6}" title="Enter 4 letters foolowed by 7 digits" required><br><br>
+                <label for="actype">Account Type:</label>
+                <input type="text" id="actype" list="accountType" required>
+                <datalist id="accountType">
+                    <option value="Savings"></option>
+                    <option value="Current"></option>
+                    <option value="FD"></option>
+                    <option value="Salary"></option>
+                </datalist><br><br>
+                <label for="ag">Age:</label>
+                <input type="number" id="ag" min="18"><br><br>
+                <label for="income">Monthly income:</label>
+                <input type="number" id="income" min="0" step="1000" required><br><br>
+                <label for="idproof">Upload ID proof:</label>
+                <input type="file" id="idproof" required><br><br>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

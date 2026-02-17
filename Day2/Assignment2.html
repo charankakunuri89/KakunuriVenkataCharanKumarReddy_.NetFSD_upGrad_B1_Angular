@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Hospital Appointment System</title>
+</head>
+<body>
+    <header>
+        <h1>Online Hospital Appointment System</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="">
+                <label for="dept">Departments:</label>
+                <input type="text" id="dept" list="departments" placeholder="Enter the Department you need">
+
+                <datalist id="departments">
+                <option value="Cardiology"></option>
+                <option value="Orthopetic"></option>
+                <option value="Neurology"></option>
+                <option value="Dentist"></option>
+                <option value="Gynacologist"></option>
+                </datalist>
+                <br><br>
+
+                <label for="doct">Doctors:</label>
+                <input type="text" id="doct" list="doctors" placeholder="choose the doctor you want">
+
+                <datalist id="doctors">
+                    <option value="Dr. samaram"></option>
+                    <option value="Dr. sarayu"></option>
+                    <option value="Dr. Vandana"></option>
+                    <option value="Dr. Arjun"></option>
+                    <option value="Dr. simha"></option>
+                    <option value="Dr. pinky"></option>
+                </datalist>
+                <br><br>
+
+                <label for="ag">Age:</label>
+                <input type="number" id="ag" min="0" max="100" required> <br><br>
+
+                <label for="ph">Phone No:</label>
+                <input type="tel" id="ph" pattern="[0-9]{10}" title="Exactly 10 digits only"><br><br>
+
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" required><br><br>
+
+                <label for="dt">Appointment Date</label>
+                <input type="date" id="dt" min="2026-02-17" required><br><br>
+
+                <label>
+                    <input type="checkbox" id="emergency"> Emergency Case
+                </label> <br><br>
+
+                <label for="tm">Appointment Time</label>
+                <input type="time" id="tm" required><br><br>
+
+                <label for="reports">Mediacal Reports:</label>
+                <input type="file" id="reports" multiple><br><br>
+
+                <input type="submit">
+            </form> 
+        </section>
+    </main>
+</body>
+</html>
