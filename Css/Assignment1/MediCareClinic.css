@@ -1,0 +1,76 @@
+body {
+    background-color: white;
+    color: white;
+    align-items: center;
+}
+
+header {
+    background-color: white;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.services {
+    padding: 20px;
+    margin: 15px;
+    box-sizing: border-box;
+    background-color: rgb(194, 197, 203);
+}
+
+nav a {
+    margin: 10px;
+    font-weight: bold;
+}
+button {
+    padding: 5px 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: hotpink;
+}
+button:hover {
+    background-color: blueviolet;
+    color: tan;
+}
+
+.services {
+    padding: 40px;
+    text-align: center;
+}
+
+.services p {
+    color: beige;
+}
+
+.service-card {
+    display: inline-block;
+    width: 250px;;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+     color: darkblue
+}
+
+#contact {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(123, 169, 120);
+}
+
+input[type="text"] {
+    background-color: #1111;
+}
+
+.banner {
+    background-color: rgb(217, 208, 223);;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(165, 140, 42);
+    text-align: center;
+}

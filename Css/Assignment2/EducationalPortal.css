@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: blue;
+    text-align: center;
+}
+
+nav a {
+    padding: 50px;;
+}
+
+#hero {
+    background-color: wheat;
+    text-align: center;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.course {
+    width: auto;
+    border: 2px solid gray;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+.course>h3 {
+    color: fuchsia;
+
+}
+
+h3 + p {
+    background-color: lawngreen;
+}
+
+.testimonals {
+    text-align: center;
+    padding: 40px;
+    background-color: firebrick;
+}
+
+a:hover {
+    color: darkgoldenrod;
+}
+
+.course:first-child {
+    background-color: #3bd865;
+}
+
+.course:last-child {
+    background-color: #1d0d02;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: yellowgreen;
+}
+

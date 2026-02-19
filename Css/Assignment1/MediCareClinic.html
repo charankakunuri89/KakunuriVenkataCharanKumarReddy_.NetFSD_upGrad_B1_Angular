@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCareClinic</title>
+    <link rel="stylesheet" href="MediCareClinic.css">
+    <style>
+        #doctor_profile {
+            background-color: darkgoldenrod;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        #doctor_profile img {
+            border-radius: 30%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: purple; color: yellow; text-align: center; padding: 10px;">
+        Emergency? CallNow : +91 8519865290
+    </div>
+    <header>
+        <h1>MediCare Clinic</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#doctor_profile">Doctor</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Your Health, Our Priority</h2>
+            <p>Providing quality healthcare services.</p>
+        </section>
+        
+        <section id="services" class="services">
+            <h2>our Services</h2>
+            <div class="service-card">
+                <h2>Speciality</h2>
+                <p>In this services we treat for particular diseases only.</p>
+            </div>
+            <div class="service-card">
+                <h2>Hcc</h2>
+                <p>In this service they provide medical cares for any diseases.</p>
+            </div>
+            <div class="service-card">
+                <h2>HIV</h2>
+                <p>This service provides caring for temparary but it doesn't cure if once affected in a life time.</p>
+            </div>
+        </section>
+        
+        <section id="doctor_profile">
+            <h2>Dr.Samaram</h2>
+            <p>MBBS, MD - 5+ Years of Experince</p>
+            <img src="images/download.jpeg" alt="doctorPhoto">
+        </section>
+        <section id="contact">
+            <form action="">
+                <h3>Contact Form: </h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name"><br><br>
+                <label for="phno">PhoneNo:</label>
+                <input type="text" id="phno" placeholder="Your PhoneNumber"><br><br>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" placeholder="Your message"></textarea><br><br>
+                <button class=" button">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer><p>&copy;All services are available Here.... All rights are reserved.</p></footer>
+</body>
+</html>
