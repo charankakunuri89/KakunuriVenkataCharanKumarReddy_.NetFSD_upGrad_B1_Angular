@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Discount Calculator</title>
+</head>
+<body>
+    <script>
+        let Amount = 6000
+        let Discount_Amount = 0, Final_payable_Amount = 0;
+        if (Amount >= 5000) {
+            Discount_Amount = Amount * 0.2
+            Final_payable_Amount= Amount - Discount_Amount;
+        }
+        else if (Amount >= 3000){
+            Discount_Amount = Amount * 0.1
+            Final_payable_Amount= Amount - Discount_Amount;
+        } 
+        else {
+            Final_payable_Amount = Amount;
+        }
+        console.log(`Discount_Amount is : ${Discount_Amount}`);
+        console.log("Final_payable_Amount is :" + Final_payable_Amount);
+    </script>
+</body>
+</html>

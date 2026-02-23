@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Student Profile Manager</title>
+</head>
+<body>
+    <div id="profile"></div>
+    <input type="number" id="marksInput" placeholder="Enter new marks">
+    <!-- <button onclick="updateMarksFromInput()">Update Marks</button> -->
+    <button id="updateBtn">Update Marks</button>
+    <script>
+        let student = {
+            name : prompt("student name"),
+            rollNo : prompt("Enter your roll number"),
+            marks : Number(prompt("Enter your marks"))
+        };
+        function updateStudentProfile(student) {
+            let prof = document.getElementById("profile");
+            prof.innerHTML = 
+            "<h3>Student Details</h3>" + 
+            "<p><strong>Name:</strong> " + student.name + "</p>" +
+            "<p><strong>Roll No:</strong> " + student.rollNo + "</p>" +
+            "<p><strong>Marks:</strong> " + student.marks + "</p>";
+        }
+        function updateMarks(newMarks) {
+            if (isNaN(newMarks)) {
+                alert("Please enter valid marks");
+                return;
+            }
+            student.marks = newMarks;
+            updateStudentProfile(student);
+        }
+        function updateMarksFromInput() {
+            let newMarks = Number(document.getElementById("marksInput").value);
+            updateMarks(newMarks);
+        }
+
+        document.getElementById("updateBtn").addEventListener("click", updateMarksFromInput);
+        updateStudentProfile(student);
+    </script>
+</body>
+</html>
