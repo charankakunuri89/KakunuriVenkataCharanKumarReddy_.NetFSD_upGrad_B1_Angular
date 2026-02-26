@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Tourism Booking</title>
+</head>
+<body>
+    <audio autoplay loop controls>
+        <source src="Audios/WhatsApp Audio 2026-02-26 at 8.02.21 PM.mp4">
+    </audio>
+    <header>
+        <h1>Travel & Tourism Booking</h1>
+    </header>
+
+    <section>
+        <h2>Explore the World With Us</h2>
+        <video controls poster="Images/download (4).jpeg">
+            <source src="Videos/1f4db3c4e4f260b7c61c56886e2d0bb9.mp4">
+        </video>
+    </section>
+
+    <main>
+        <section id="booking">
+            <h2>Book Your Trip Here...</h2>
+            <form action="#" method="post">
+                <label for="source">Source City:</label><br>
+                <input list="cities" id="source" placeholder="Enter departure city" required>
+                <datalist id="cities">
+                    <option value="Hyderabad"></option>
+                    <option value="Banglore"></option>
+                    <option value="Mumbai"></option>
+                    <option value="Chennai"></option>
+                    <option value="Pune"></option>
+                    <option value="Delhi"></option>
+                </datalist><br><br>
+
+                <label for="destination">Destination City:</label><br>
+                <input list="cities" id="destination" placeholder="Enter destination city" required><br><br>
+                <br><br>
+
+                <label for="depart">Travel Date(Departure)</label><br>
+                <input type="date" id="depart" name="departure_date" required><br><br>
+
+                <label for="return">Return Date:</label><br>
+                <input type="date" id="return" name="return_date" required><br><br>
+
+                <label for="passengers">Number of Passengers:</label><br>
+                <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required><br><br>
+
+                <label for="class">Travel Class:</label><br>
+                <select id="class" name="travel_class" required>
+                    <option value="">Select Class</option>
+                    <option value="Economy">Economy</option>
+                    <option value="Premium Economy">Premium Economy</option>
+                    <option value="Business">Business</option>
+                    <option value="First Class">First Class</option>
+                </select>
+                <br><br>
+
+                <label for="airline">Preferred Airline:</label><br>
+                <input list="airlines" id="airline" name="airline" placeholder="Type or select airline" required>
+                <datalist id="airlines">
+                    <option value="IndiGo">
+                    <option value="Air India">
+                    <option value="Vistara">
+                    <option value="Emirates">
+                    <option value="Qatar Airways">
+                </datalist>
+                <br><br>
+
+                 <label for="meal">Meal Preference Color Tag:</label><br>
+                <input type="color" id="meal" name="meal_color" value="#ff0000">
+                <br><br>
+
+                <label for="notes">Special Assistance / Notes:</label><br>
+                <textarea id="notes" name="notes" rows="4" cols="40"
+                    placeholder="Mention wheelchair assistance, medical needs, extra baggage, etc."></textarea>
+                <br><br>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Travel & Tourism Company | Safe & Secure Booking</p>
+    </footer>
+</body>
+</html>
